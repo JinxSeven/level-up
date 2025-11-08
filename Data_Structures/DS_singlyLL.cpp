@@ -125,13 +125,13 @@ public:
 };
 
 int main() {
-    std::vector<char>vowels = {'a', 'e', 'i', 'o', 'u'};
-    std::vector<char>lastfive = {'v', 'w', 'x', 'y', 'z'};
+    std::vector<char> vowels = {'a', 'e', 'i', 'o', 'u'};
+    std::vector<char> last_five = {'v', 'w', 'x', 'y', 'z'};
     SList one;
     for (char out : vowels) {
         one.appendList(out);
     }
-    for (char out : lastfive) {
+    for (char out : last_five) {
         one.prependList(out);
     }
     one.displayList();
